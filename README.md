@@ -21,7 +21,7 @@ should be treated the same way:
 
 The 'session' variable is a string. It should be used like so:
 
--> 'session_name = "Qualifying"' or 'session_name = "Race"' 
+-> 'session_name = "Q"' or 'session_name = "R"' 
        
 The drivers variable is slightly different, this is a list that requires strings
 for exactly two drivers. The three letter all caps initials used in the F1 broadcast 
