@@ -15,12 +15,15 @@ Currently, I am working on implementing a GG-plot feature, which allows users to
 Unfortunately, current attempts at a GG-plot feature haven't worked as expected and produced unphysical results.
 
 ## Example prompts, and how to use the function
+
+### **year** variable
        
 the `year` variable is an integer, and so it should be input like so:
 
 ```python       
 year = 2025
 ```
+### **round_number** variable
 
 The same can be said about the `round_number` variable:
 
@@ -30,6 +33,8 @@ round_number = 5
 
 *Future versions of this tool may look at switching from round number to `event name`, this however is* **not the case**.
 
+### **session** variable
+
 The `session` variable is a string:
 
 ```python
@@ -37,7 +42,9 @@ session_name = "Q"
 ```
 
 *Note here, that you are not restricted to "Q", "FP1", etc. you can input "Qualifying", "Race", etc.*
-       
+
+### **drivers** variable
+
 The `drivers` variable is slightly different, this is a list that requires strings
 for exactly two drivers. The three letter all caps initials used in the F1 broadcast 
 should be used here:
@@ -45,6 +52,8 @@ should be used here:
 ```python
 drivers = ["VER", "HAM"]
 ```
+
+### Example usage and outputs
 
 An example of calling of the function with its required inputs:
 
