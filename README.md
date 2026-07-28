@@ -12,7 +12,7 @@ This function is currently limited to two drivers for analysis; in practice, any
 
 Currently, I am working on implementing a GG-plot feature, which allows users to visualise the approximate friction envelope for each car to make clearer and more data-informed comments about differences in the car.
 
-Unfortunately, current attempts at a GG-plot feature haven't worked as expected and produced unphysical results.
+Unfortunately, current attempts at a GG-plot feature haven't worked as expected and produced unphysical results such as extreme lateral G values, or little longitudinal G being recorded. I am currently looking into better ways to compute these values, using the data provided by FastF1.
 
 ## Example prompts, and how to use the function
 
@@ -71,7 +71,7 @@ another calling:
 telemetry_data = fastf1_telemetry_analysis(2026, 11, "Q", ["NOR", "HAM"])
 ```
 
-Producing this graph
+Producing this graph:
 
 <img width="1920" height="967" alt="NorHam" src="https://github.com/user-attachments/assets/fae05579-48fe-464f-9c6e-db69e783b957" />
 
