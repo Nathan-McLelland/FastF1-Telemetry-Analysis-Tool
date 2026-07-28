@@ -16,41 +16,41 @@ Unfortunately, current attempts at a GG-plot feature haven't worked as expected 
 
 ## Example prompts, and how to use the function
        
-the *year* variable is an integer, and so it should be input like so:
+the `year` variable is an integer, and so it should be input like so:
 
-'''python       
+```python       
 year = 2025
-'''
+```
 
-The same can be said about the *round_number* variable:
+The same can be said about the `round_number` variable:
 
-'''python
+```python
 round_number = 5
-'''
+```
 
-*Future versions of this tool may look at switching from round number to event name, this however is* **not the case**.
+*Future versions of this tool may look at switching from round number to `event name`, this however is* **not the case**.
 
-The *session* variable is a string:
+The `session` variable is a string:
 
-'''python
+```python
 session_name = "Q"
-'''
+```
 
 *Note here, that you are not restricted to "Q", "FP1", etc. you can input "Qualifying", "Race", etc.*
        
-The drivers variable is slightly different, this is a list that requires strings
+The `drivers` variable is slightly different, this is a list that requires strings
 for exactly two drivers. The three letter all caps initials used in the F1 broadcast 
 should be used here:
        
-'''python
+```python
 drivers = ["VER", "HAM"]
-'''
+```
 
 An example of calling of the function with its required inputs:
 
-'''python
--> telemetry_data = fastf1_telemetry_analysis(2026, 6, "Q", ["ANT", "VER"])
-'''
+```python
+telemetry_data = fastf1_telemetry_analysis(2026, 6, "Q", ["ANT", "VER"])
+```
 
 This would then produce this graph:
 
@@ -58,9 +58,9 @@ This would then produce this graph:
 
 another calling:
 
-'''python
+```python
 telemetry_data = fastf1_telemetry_analysis(2026, 11, "Q", ["NOR", "HAM"])
-'''
+```
 
 Producing this graph
 
