@@ -1,4 +1,7 @@
 # FastF1-Telemetry-Analysis-Tool
+
+Built using FastF1 (MIT License): https://github.com/theOehrly/Fast-F1
+
 Python function that allows users to visualise the differences in driver inputs during F1 practice, qualifying and race sessions. This function utilises data provided from the FastF1 API displaying these overlaid traces: speed, throttle, brake, gear, time delta
 
 This function is currently limited to two drivers for analysis; in practice, any more than 2 would be messy and difficult to comprehend.
@@ -46,7 +49,7 @@ Producing this graph
 
 <img width="1920" height="967" alt="NorHam" src="https://github.com/user-attachments/assets/fae05579-48fe-464f-9c6e-db69e783b957" />
 
-
+This tool uses the FastF1 library to access Formula 1 timing and telemetry data. This project is unofficial and not affiliated with Formula 1, FOM, or the FIA. F1, FORMULA ONE, and related marks are trademarks of Formula One Licensing B.V. Telemetry data is fetched live at runtime and is not redistributed as part of this repository.
 
 
 
