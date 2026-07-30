@@ -3,6 +3,10 @@ def fastf1_telemetry_analysis(year: int, round_number: int, session_name: str, d
     import fastf1.plotting
     import matplotlib.pyplot as plt
 
+    if len(drivers) != 2:
+
+        raise ValueError("Incorrect number of drivers: 2 REQUIRED!")
+
     session = fastf1.get_session(year, round_number, session_name)
     session.load()
 
