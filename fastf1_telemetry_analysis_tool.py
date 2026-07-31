@@ -7,8 +7,14 @@ def fastf1_telemetry_analysis(year: int, round_number: int, session_name: str, d
 
         raise ValueError("Incorrect number of drivers: 2 REQUIRED!")
 
-    session = fastf1.get_session(year, round_number, session_name)
-    session.load()
+    try:
+
+        session = fastf1.get_session(year, round_number, session_name)
+        session.load()
+
+    except Exception as e:
+
+        raise ValueError(f"Could not retrieve data for {year} round: {round_number}: {e}")
 
     laps = session.laps
 
@@ -86,3 +92,7 @@ def fastf1_telemetry_analysis(year: int, round_number: int, session_name: str, d
     plt.show()
 
     return data_list
+
+if __name__ == "__main__":
+
+    telemetry_data = fastf1_telemetry_analysis(2026, 7, "Q", ["RUS", "HAM"])
